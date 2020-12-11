@@ -213,11 +213,38 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#awardCountry -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#awardCountry">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Awards"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#awardYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#awardYear">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Awards"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#composedYear -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#composedYear">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Music"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasAge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasAge">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
 
@@ -240,10 +267,28 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasSongAmount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasSongAmount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Playlist"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#isSoundTrackOf -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#isSoundTrackOf">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Music"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#musicVideoLength -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#musicVideoLength">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#MusicVideo"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
