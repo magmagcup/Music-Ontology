@@ -37,10 +37,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasAwards -->
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasMember -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasAwards">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasMember">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#isMemberOfBand"/>
     </owl:ObjectProperty>
     
 
@@ -110,6 +110,12 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#MusicVideo"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#MusicOwner"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#isMemberOfBand -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#isMemberOfBand"/>
     
 
 
