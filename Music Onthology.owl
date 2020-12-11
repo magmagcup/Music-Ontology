@@ -207,6 +207,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#awardYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#awardYear">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Awards"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#composedYear -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#composedYear">
