@@ -624,9 +624,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#OtherInstrumentailist -->
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#OtherInstrumentalist -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#OtherInstrumentailist">
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#OtherInstrumentalist">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Musician"/>
     </owl:Class>
     
