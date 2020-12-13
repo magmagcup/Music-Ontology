@@ -286,7 +286,7 @@
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasAge -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasAge">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Person"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Solo"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     </owl:DatatypeProperty>
     
@@ -304,7 +304,7 @@
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasGender -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasGender">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Person"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Solo"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -453,10 +453,26 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Composer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Composer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Musician"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ConceptMusicVideo -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ConceptMusicVideo">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#MusicVideo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Drummer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Drummer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Musician"/>
     </owl:Class>
     
 
@@ -477,6 +493,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Guitarist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Guitarist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Musician"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Happy -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Happy">
@@ -485,9 +509,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Hip_hopMusic -->
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#HipHopMusic -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Hip_hopMusic">
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#HipHopMusic">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Music"/>
     </owl:Class>
     
@@ -511,6 +535,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#JOOXThailandMusicAwards">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Awards"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Keyboardist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Keyboardist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Musician"/>
     </owl:Class>
     
 
@@ -555,10 +587,34 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Musician -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Musician">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Person"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#NarrativeMusicVideo -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#NarrativeMusicVideo">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#MusicVideo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#NonMusician -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#NonMusician">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#OtherInstrumentailist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#OtherInstrumentailist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Musician"/>
     </owl:Class>
     
 
@@ -573,9 +629,7 @@
 
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Person -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Person">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Artist"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Person"/>
     
 
 
@@ -617,9 +671,33 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Singer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Singer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Musician"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Solo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Solo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Artist"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#TopSongList -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#TopSongList"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Violinist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Violinist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Musician"/>
+    </owl:Class>
     
 
 
