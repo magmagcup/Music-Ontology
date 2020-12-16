@@ -21,14 +21,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#canPlayInstrument -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#canPlayInstrument">
-        <rdfs:label xml:lang="en">What&apos;s instrument that Person can play</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#composeSong -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#composeSong">
