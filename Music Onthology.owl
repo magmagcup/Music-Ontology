@@ -21,14 +21,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#composeSong -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#composeSong">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#isComposedBy"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasArtist -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasArtist">
@@ -56,11 +48,48 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasComposer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasComposer">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#isComposerOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Music"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#MusicOwner"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasDrummer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasDrummer">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasMember"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#isDrummerOfBand"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasGuitarist -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasGuitarist">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasMember"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#isGuitaristOfBand"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasInstrument -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasInstrument">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#isInstrumentOf"/>
         <rdfs:label xml:lang="en">What instrument was played in this song</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasKeyboardist -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasKeyboardist">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasMember"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#isKeyboardistOfBand"/>
     </owl:ObjectProperty>
     
 
@@ -114,10 +143,28 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasSingle -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasSingle">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasMember"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#isSingleOfBand"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasTopSong -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasTopSong">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#isTopSongOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasViolinist -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasViolinist">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasMember"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#isViolinistOfBand"/>
     </owl:ObjectProperty>
     
 
@@ -139,11 +186,24 @@
     
 
 
-    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#isComposedBy -->
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#isComposerOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#isComposedBy">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Music"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#MusicOwner"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#isComposerOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#isDrummerOfBand -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#isDrummerOfBand">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#isMemberOfBand"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#isGuitaristOfBand -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#isGuitaristOfBand">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#isMemberOfBand"/>
     </owl:ObjectProperty>
     
 
@@ -152,6 +212,14 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#isInstrumentOf">
         <rdfs:label xml:lang="en">This instrument was played in that song</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#isKeyboardistOfBand -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#isKeyboardistOfBand">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#isMemberOfBand"/>
     </owl:ObjectProperty>
     
 
@@ -206,6 +274,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#isSingleOfBand -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#isSingleOfBand">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#isMemberOfBand"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#isStarredBy -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#isStarredBy">
@@ -228,6 +304,14 @@
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#isTypeOfAward -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#isTypeOfAward"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#isViolinistOfBand -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#isViolinistOfBand">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#isMemberOfBand"/>
+    </owl:ObjectProperty>
     
 
 
