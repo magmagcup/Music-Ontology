@@ -618,6 +618,22 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Actor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Actor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#NonMusician"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Actress -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Actress">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#NonMusician"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#AerophoneInstrument -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#AerophoneInstrument">
