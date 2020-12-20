@@ -634,11 +634,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#bandFoundedDate -->
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#bandFoundedYear -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#bandFoundedDate">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#bandFoundedYear">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Band"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     </owl:DatatypeProperty>
     
 
@@ -652,9 +652,18 @@
     
 
 
-    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#companyFoundedDate -->
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#companyCountry -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#companyFoundedDate">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#companyCountry">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#companyFoundedYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#companyFoundedYear">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Company"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
@@ -1268,6 +1277,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Alex_Call">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#AcousticGuitarist"/>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -1297,6 +1307,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Anthony_Lockett">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#AcousticGuitarist"/>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -1318,6 +1329,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Arnett_Leftenant">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#OtherInstrumentalist"/>
         <playAerophoneInstrument rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Saxophone"/>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -1326,6 +1338,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Artiwara_Kongmalai">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Singer"/>
+        <bandAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">41</bandAge>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -1345,6 +1359,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Athitat_Sornpaisarn">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Bassist"/>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -1383,6 +1398,8 @@
         <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ทางผ่าน"/>
         <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ทำดีที่สุดแล้ว"/>
         <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#เค้าคนนั้น"/>
+        <companyCountry>Thailand</companyCountry>
+        <companyFoundedYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</companyFoundedYear>
     </owl:NamedIndividual>
     
 
@@ -1420,7 +1437,15 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Bodyslam">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Band"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Artiwara_Kongmalai"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Ohm_Plengkhum"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Suchatti_Janed"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Tanadol_Changsawek"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Thanachai_Tantrakul"/>
         <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#วิชาตัวเบา"/>
+        <bandAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</bandAge>
+        <bandFoundedYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2002</bandFoundedYear>
+        <bandMemberAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</bandMemberAmount>
     </owl:NamedIndividual>
     
 
@@ -1442,6 +1467,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Brian_Mitchell">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#OtherInstrumentalist"/>
         <playElectrophoneInstrument rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ElectronicOrgan"/>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -1463,6 +1489,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Bruce_Thomas">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Bassist"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">72</hasAge>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -1495,6 +1523,9 @@
         <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#I_Want_You"/>
         <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Insane"/>
         <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#I&apos;ll_Be_With_You"/>
+        <bandAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">46</bandAge>
+        <bandFoundedYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1974</bandFoundedYear>
+        <bandMemberAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</bandMemberAmount>
     </owl:NamedIndividual>
     
 
@@ -1506,6 +1537,8 @@
         <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#I_Want_You"/>
         <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Insane"/>
         <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#I&apos;ll_Be_With_You"/>
+        <companyCountry>United States</companyCountry>
+        <companyFoundedYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1973</companyFoundedYear>
     </owl:NamedIndividual>
     
 
@@ -1522,6 +1555,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Chanakan_Rattana-udom">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Singer"/>
+        <bandAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</bandAge>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -1569,6 +1604,9 @@
         <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#John_McFee"/>
         <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Mitch_Howie"/>
         <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#(The_Angels_Wanna_Wear_My)_Red_Shoes"/>
+        <bandAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">53</bandAge>
+        <bandFoundedYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1967</bandFoundedYear>
+        <bandMemberAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</bandMemberAmount>
     </owl:NamedIndividual>
     
 
@@ -1617,6 +1655,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Denny_Laine">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#AcousticGuitarist"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">76</hasAge>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -1625,6 +1665,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Denny_Seiwell">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Drummer"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">71</hasAge>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -1679,6 +1721,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Elisabeth_Corrin_Maurus">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Singer"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38</hasAge>
+        <hasGender>Female</hasGender>
     </owl:NamedIndividual>
     
 
@@ -1700,6 +1744,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Eric_Durham">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#AcousticGuitarist"/>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -1708,6 +1753,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Eve_Pancharoen">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Singer"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">39</hasAge>
+        <hasGender>Female</hasGender>
     </owl:NamedIndividual>
     
 
@@ -1753,6 +1800,9 @@
         <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Nappy_Heads"/>
         <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Nappy_Heads_-_Remix"/>
         <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Ready_or_Not"/>
+        <bandAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</bandAge>
+        <bandFoundedYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1992</bandFoundedYear>
+        <bandMemberAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</bandMemberAmount>
     </owl:NamedIndividual>
     
 
@@ -1761,6 +1811,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Gary_Dow">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Bassist"/>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -1792,6 +1843,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Gregory_Johnson">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Keyboardist"/>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -1800,6 +1852,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#HARD_ROCK_2010">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Playlist"/>
+        <hasSongAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasSongAmount>
     </owl:NamedIndividual>
     
 
@@ -1808,6 +1861,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#HIPHOPUDONTSTOP">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Playlist"/>
+        <hasSongAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasSongAmount>
     </owl:NamedIndividual>
     
 
@@ -1878,6 +1932,7 @@
         <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ขวัญชนก_พันธุระ"/>
         <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#พสิษฐ์_เอกวิไชยภัสร์"/>
         <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ถ้าฉันเป็นเขา"/>
+        <bandMemberAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</bandMemberAmount>
     </owl:NamedIndividual>
     
 
@@ -1898,6 +1953,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#James_Paul_McCartney">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Singer"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">78</hasAge>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -1918,6 +1975,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#James_Wormworth">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Drummer"/>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -1935,6 +1993,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#John_Ciambotti">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Bassist"/>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -1943,6 +2002,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#John_McFee">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#AcousticGuitarist"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</hasAge>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -1951,6 +2012,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Joy_Olasunmibo_Ogunmakin">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Singer"/>
+        <bandAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</bandAge>
+        <hasGender>Female</hasGender>
     </owl:NamedIndividual>
     
 
@@ -1969,6 +2032,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Kanin_Wattanapakasem">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#AcousticGuitarist"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</hasAge>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -1997,6 +2062,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Keith_Christopher">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ElectronicBassist"/>
+        <hasGender>Female</hasGender>
     </owl:NamedIndividual>
     
 
@@ -2013,6 +2079,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Larry_Blackmon">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Singer"/>
+        <bandAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</bandAge>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -2033,6 +2101,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Larry_Campbell">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ElectronicGuitarist"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65</hasAge>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -2041,6 +2111,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Lauryn_Noelle_Hill">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Singer"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</hasAge>
+        <hasGender>Female</hasGender>
     </owl:NamedIndividual>
     
 
@@ -2049,6 +2121,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Linda_McCartney">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Keyboardist"/>
+        <hasGender>Female</hasGender>
     </owl:NamedIndividual>
     
 
@@ -2079,6 +2152,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Mitch_Howie">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Drummer"/>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -2124,6 +2198,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Nathan_Leftenant">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#OtherInstrumentalist"/>
         <playAerophoneInstrument rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Trumpet"/>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -2132,6 +2207,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Nattawut_Srimhok">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Singer"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38</hasAge>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -2150,6 +2227,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Natthanan_Phangjunan">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Bassist"/>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -2158,6 +2236,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Nel_Ust_Wyclef_Jean">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Keyboardist"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">51</hasAge>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -2176,6 +2256,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Notapol_Srichomkwan">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Bassist"/>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -2206,6 +2287,7 @@
         <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Suchatti_Janed"/>
         <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Tanadol_Changsawek"/>
         <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Thanachai_Tantrakul"/>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -2215,6 +2297,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Olarn_Chujai">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Singer"/>
         <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Olarn_Chujai"/>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -2228,6 +2311,7 @@
         <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ทางผ่าน"/>
         <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ทำดีที่สุดแล้ว"/>
         <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#เค้าคนนั้น"/>
+        <bandMemberAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</bandMemberAmount>
     </owl:NamedIndividual>
     
 
@@ -2246,6 +2330,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Paisan_Tunchot">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ElectronicGuitarist"/>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -2273,6 +2358,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Pete_Thomas">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Drummer"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">66</hasAge>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -2293,6 +2380,8 @@
         <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Down_on_My_Knees"/>
         <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Help_Is_Coming"/>
         <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Slow,_Slow_(Run_Run)"/>
+        <companyCountry>United Kingdom</companyCountry>
+        <companyFoundedYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1913</companyFoundedYear>
     </owl:NamedIndividual>
     
 
@@ -2302,6 +2391,8 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Pras_Michel">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#OtherInstrumentalist"/>
         <playElectrophoneInstrument rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Sampler"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">48</hasAge>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -2320,6 +2411,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Puttipong_Wongchuwan">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Keyboardist"/>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -2348,6 +2440,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Ratthaphong_Phoorisit">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Singer"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</hasAge>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -2377,6 +2471,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Reggae">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Playlist"/>
+        <hasSongAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasSongAmount>
     </owl:NamedIndividual>
     
 
@@ -2419,6 +2514,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Siravit_Chaikitamnuaychok">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Drummer"/>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -2439,6 +2535,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Steve_Nieve">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Keyboardist"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">62</hasAge>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -2448,6 +2546,8 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Stiff_Records">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Company"/>
         <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Alison"/>
+        <companyCountry>United Kingdom</companyCountry>
+        <companyFoundedYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1976</companyFoundedYear>
     </owl:NamedIndividual>
     
 
@@ -2456,6 +2556,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Suchatti_Janed">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Drummer"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43</hasAge>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -2464,6 +2566,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Tanadol_Changsawek">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Bassist"/>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -2481,6 +2584,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Tanont_Chumroen">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Singer"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</hasAge>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -2489,6 +2594,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ThaiSong2020">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#TopSongList"/>
+        <yearOfTopSongs rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2020</yearOfTopSongs>
     </owl:NamedIndividual>
     
 
@@ -2497,6 +2603,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Thanachai_Tantrakul">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#AcousticGuitarist"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">42</hasAge>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -2505,6 +2613,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Thanwa_Boonsoongnern">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Singer"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</hasAge>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -2519,6 +2629,9 @@
         <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Accidents_Will_Happen"/>
         <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Alison"/>
         <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#(What&apos;s_So_Funny_&apos;Bout)_Peace,_Love_And_Understanding"/>
+        <bandAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43</bandAge>
+        <bandFoundedYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1977</bandFoundedYear>
+        <bandMemberAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</bandMemberAmount>
     </owl:NamedIndividual>
     
 
@@ -2545,6 +2658,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Tiffany_Page">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Singer"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</hasAge>
+        <hasGender>Female</hasGender>
     </owl:NamedIndividual>
     
 
@@ -2564,6 +2679,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Tin_Napalai">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Drummer"/>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -2572,6 +2688,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Tomi_Jenkins">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Singer"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">46</hasAge>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -2620,6 +2738,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Ukrit_Willibrord_Dongabriel">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Singer"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</hasAge>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -2644,6 +2764,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Viphurit_Siritip">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Singer"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</hasAge>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -2672,6 +2794,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Wayne_Cooper">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Singer"/>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -2683,6 +2806,9 @@
         <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#พูดจริง"/>
         <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ภาวนา"/>
         <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#รู้ตัวอีกที"/>
+        <companyCountry>Thailand</companyCountry>
+        <companyFoundedYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2012</companyFoundedYear>
+        <companyType>ธุรกิจบันเทิง</companyType>
     </owl:NamedIndividual>
     
 
@@ -2707,6 +2833,9 @@
         <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Denny_Seiwell"/>
         <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Linda_McCartney"/>
         <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Band_On_The_Run"/>
+        <bandAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">49</bandAge>
+        <bandFoundedYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1971</bandFoundedYear>
+        <bandMemberAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</bandMemberAmount>
     </owl:NamedIndividual>
     
 
@@ -2741,6 +2870,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#กานต์ชนก_ม่อมพะเนาว์">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Drummer"/>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -2749,6 +2879,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ขวัญชนก_พันธุระ">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Bassist"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">37</hasAge>
+        <hasGender>Female</hasGender>
     </owl:NamedIndividual>
     
 
@@ -2757,6 +2889,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#คณิน_วัฒนภาเกษม">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Singer"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</hasAge>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -2777,6 +2911,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#จุติโชค_อัศรัสกร">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#AcousticGuitarist"/>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -2785,6 +2920,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ชิษณุชา_ตันติเมธ">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Singer"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</hasAge>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -2794,6 +2931,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ณัฐิวุฒิ_ทวยเดช">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#AcousticGuitarist"/>
         <playElectrophoneInstrument rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ElectronicGuitar"/>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -2842,6 +2980,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#พสิษฐ์_เอกวิไชยภัสร์">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Singer"/>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -2877,6 +3016,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ภูวดิท_ศิลาอุดมเดช">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Singer"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</hasAge>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -2897,6 +3038,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ภูษณะ_ตรีบุรุษ">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Drummer"/>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -2931,6 +3073,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ศุภัคชญา_สุขใบเย็น">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Singer"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</hasAge>
+        <hasGender>Female</hasGender>
     </owl:NamedIndividual>
     
 
@@ -3007,6 +3151,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#2019JOOXThailandMusicAwards"/>
         <hasArtistOfTheYearAward rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#2019JOOXAristOfTheYearAward"/>
         <hasNewAristOfTheYearAward rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#2019JOOXNewFaceAristOfTheYearAward"/>
+        <awardCountry>Thailand</awardCountry>
+        <awardYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2019</awardYear>
     </owl:NamedIndividual>
     
 
@@ -3016,6 +3162,8 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#2019JOOXAwardMusicCatagory">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#2019JOOXThailandMusicAwards"/>
         <hasRockSongOfTheYearAward rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#2019JOOXRockSongOfTheYearAward"/>
+        <awardCountry>Thailand</awardCountry>
+        <awardYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2019</awardYear>
     </owl:NamedIndividual>
     
 
@@ -3060,6 +3208,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#2020JOOXThailandMusicAwards"/>
         <hasArtistOfTheYearAward rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#2020JOOXAristOfTheYearAward"/>
         <hasNewAristOfTheYearAward rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#2020JOOXNewAristOfTheYearAward"/>
+        <awardCountry>Thailand</awardCountry>
+        <awardYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2020</awardYear>
     </owl:NamedIndividual>
     
 
@@ -3070,6 +3220,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#2020JOOXThailandMusicAwards"/>
         <hasPopSongOfTheYear rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#2020JOOXPopSongOfTheYearAward"/>
         <hasSongOfTheYearAward rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#2020JOOXSongOfTheYearAward"/>
+        <awardCountry>Thailand</awardCountry>
+        <awardYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2020</awardYear>
     </owl:NamedIndividual>
     
 
@@ -3202,6 +3354,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Thanawut​_Wiboonkit">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ElectronicGuitarist"/>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
@@ -3241,6 +3394,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Wongsakorn​_Raksapol​">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Keyboardist"/>
+        <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
 
