@@ -255,6 +255,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasNewAristOfTheYearAward -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasNewAristOfTheYearAward">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasArtistAward"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasOwner -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasOwner">
@@ -319,6 +327,14 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasSingler">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasMember"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#isSinglerOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasSongOfTheYearAward -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasSongOfTheYearAward">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasMusicAward"/>
     </owl:ObjectProperty>
     
 
@@ -1286,6 +1302,25 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Athitat_S. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Athitat_S.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Freelance"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Athitat_Sornpaisarn"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ทำดีที่สุดแล้ว"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#เจ็บจนพอ"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Athitat_Sornpaisarn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Athitat_Sornpaisarn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Bassist"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Ayo_-_Down_On_My_Knees_Music_Video_OFFICIAL -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Ayo_-_Down_On_My_Knees_Music_Video_OFFICIAL">
@@ -1458,6 +1493,18 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Dear_Boy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Dear_Boy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#RockMusic"/>
+        <hasReleaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1971</hasReleaseYear>
+        <songID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</songID>
+        <songLength>2:14</songLength>
+        <songTempo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">76</songTempo>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Declan_Patrick_MacManus -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Declan_Patrick_MacManus">
@@ -1613,6 +1660,17 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Geeno_S -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Geeno_S">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Freelance"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ทางผ่าน"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ทำดีที่สุดแล้ว"/>
+        <playMembranophoneInstrument rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Drum"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Gregory_Johnson -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Gregory_Johnson">
@@ -1702,7 +1760,7 @@
         <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#กานต์ชนก_ม่อมพะเนาว์"/>
         <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ขวัญชนก_พันธุระ"/>
         <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#พสิษฐ์_เอกวิไชยภัสร์"/>
-        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Tah_Chun_Bpen_Kao"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ถ้าฉันเป็นเขา"/>
     </owl:NamedIndividual>
     
 
@@ -1747,18 +1805,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Jep_Jon_Por_-_Enough -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Jep_Jon_Por_-_Enough">
-        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#PopMusic"/>
-        <hasReleaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2019</hasReleaseYear>
-        <songID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</songID>
-        <songLength>4:38</songLength>
-        <songTempo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">173</songTempo>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Joe_Echo -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Joe_Echo">
@@ -1788,6 +1834,24 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Joy_Olasunmibo_Ogunmakin">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Singer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Kanin_W. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Kanin_W.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Freelance"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Kanin_Wattanapakasem"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#เค้าคนนั้น"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Kanin_Wattanapakasem -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Kanin_Wattanapakasem">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#AcousticGuitarist"/>
     </owl:NamedIndividual>
     
 
@@ -1887,7 +1951,9 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#MEYOU">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Solo"/>
         <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ชิษณุชา_ตันติเมธ"/>
-        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Pa_Wa_Na"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#พูดจริง"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ภาวนา"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#รู้ตัวอีกที"/>
     </owl:NamedIndividual>
     
 
@@ -1904,7 +1970,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ModMan">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Freelance"/>
-        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Jep_Jon_Por_-_Enough"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#เจ็บจนพอ"/>
         <playElectrophoneInstrument rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Keyboard"/>
     </owl:NamedIndividual>
     
@@ -1953,6 +2019,24 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Natthanan_P. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Natthanan_P.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Freelance"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Natthanan_Phangjunan"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#เค้าคนนั้น"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Natthanan_Phangjunan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Natthanan_Phangjunan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Bassist"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Nel_Ust_Wyclef_Jean -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Nel_Ust_Wyclef_Jean">
@@ -1961,12 +2045,12 @@
     
 
 
-    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Notapol -->
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Notapol_S. -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Notapol">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Notapol_S.">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Freelance"/>
         <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Notapol_Srichomkwan"/>
-        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Jep_Jon_Por_-_Enough"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#เจ็บจนพอ"/>
     </owl:NamedIndividual>
     
 
@@ -2002,18 +2086,27 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Band"/>
         <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#คณิน_วัฒนภาเกษม"/>
         <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ณัฐิวุฒิ_ทวยเดช"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ทางผ่าน"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ทำดีที่สุดแล้ว"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#เค้าคนนั้น"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Pa_Wa_Na -->
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Paisan_T. -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Pa_Wa_Na">
-        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#SoulMusic"/>
-        <hasReleaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2019</hasReleaseYear>
-        <songID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</songID>
-        <songLength>2:41</songLength>
-        <songTempo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">138</songTempo>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Paisan_T.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Freelance"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Paisan_Tunchot"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ทางผ่าน"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Paisan_Tunchot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Paisan_Tunchot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ElectronicGuitarist"/>
     </owl:NamedIndividual>
     
 
@@ -2065,10 +2158,40 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Puttipong_W. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Puttipong_W.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Freelance"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Puttipong_Wongchuwan"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ทางผ่าน"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Puttipong_Wongchuwan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Puttipong_Wongchuwan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Keyboardist"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Raining -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Raining">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Weather"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Ram_On -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Ram_On">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#RockMusic"/>
+        <hasReleaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1971</hasReleaseYear>
+        <songID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</songID>
+        <songLength>2:30</songLength>
+        <songTempo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">128</songTempo>
     </owl:NamedIndividual>
     
 
@@ -2134,6 +2257,36 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Siravit_C. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Siravit_C.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Freelance"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Siravit_Chaikitamnuaychok"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#เค้าคนนั้น"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Siravit_Chaikitamnuaychok -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Siravit_Chaikitamnuaychok">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Drummer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Smile_Away -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Smile_Away">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#RockMusic"/>
+        <hasReleaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1971</hasReleaseYear>
+        <songID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</songID>
+        <songLength>3:53</songLength>
+        <songTempo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">123</songTempo>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Steve_Nieve -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Steve_Nieve">
@@ -2151,15 +2304,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Tah_Chun_Bpen_Kao -->
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ThaiSong2020 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Tah_Chun_Bpen_Kao">
-        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#PopMusic"/>
-        <hasArtist rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Indigo"/>
-        <hasReleaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2019</hasReleaseYear>
-        <songID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</songID>
-        <songLength>4:01</songLength>
-        <songTempo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">156</songTempo>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ThaiSong2020">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#TopSongList"/>
     </owl:NamedIndividual>
     
 
@@ -2212,12 +2360,13 @@
     
 
 
-    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Tin -->
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Tin_N. -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Tin">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Tin_N.">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Freelance"/>
         <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Tin_Napalai"/>
-        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Jep_Jon_Por_-_Enough"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ทำดีที่สุดแล้ว"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#เจ็บจนพอ"/>
     </owl:NamedIndividual>
     
 
@@ -2234,6 +2383,18 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Tomi_Jenkins">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Singer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Too_Many_People -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Too_Many_People">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#RockMusic"/>
+        <hasReleaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1971</hasReleaseYear>
+        <songID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</songID>
+        <songLength>4:10</songLength>
+        <songTempo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">95</songTempo>
     </owl:NamedIndividual>
     
 
@@ -2275,7 +2436,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Wanyai">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Solo"/>
         <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Olarn_Chujai"/>
-        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Jep_Jon_Por_-_Enough"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#เจ็บจนพอ"/>
         <playElectrophoneInstrument rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ElectronicGuitar"/>
     </owl:NamedIndividual>
     
@@ -2351,12 +2512,14 @@
     
 
 
-    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#จุติโชค -->
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#จุติโชค_อ. -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#จุติโชค">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#จุติโชค_อ.">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Freelance"/>
         <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#จุติโชค_อัศรัสกร"/>
-        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Pa_Wa_Na"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#พูดจริง"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ภาวนา"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#รู้ตัวอีกที"/>
     </owl:NamedIndividual>
     
 
@@ -2381,6 +2544,46 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ณัฐิวุฒิ_ทวยเดช">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#AcousticGuitarist"/>
+        <playElectrophoneInstrument rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ElectronicGuitar"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ถ้าฉันเป็นเขา -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ถ้าฉันเป็นเขา">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#PopMusic"/>
+        <hasArtist rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Indigo"/>
+        <isMusicOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ThaiSong2020"/>
+        <hasReleaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2019</hasReleaseYear>
+        <songID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</songID>
+        <songLength>4:01</songLength>
+        <songTempo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">156</songTempo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ทางผ่าน -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ทางผ่าน">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#PopMusic"/>
+        <isMusicOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ThaiSong2020"/>
+        <hasReleaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2020</hasReleaseYear>
+        <songID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</songID>
+        <songLength>4:52</songLength>
+        <songTempo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">136</songTempo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ทำดีที่สุดแล้ว -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ทำดีที่สุดแล้ว">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#PopMusic"/>
+        <hasReleaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2020</hasReleaseYear>
+        <songID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</songID>
+        <songLength>4:17</songLength>
+        <songTempo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">139</songTempo>
     </owl:NamedIndividual>
     
 
@@ -2393,12 +2596,40 @@
     
 
 
-    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ภูษณะ -->
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#พูดจริง -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ภูษณะ">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#พูดจริง">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#SoulMusic"/>
+        <isMusicOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ThaiSong2020"/>
+        <hasReleaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2020</hasReleaseYear>
+        <songID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</songID>
+        <songLength>3:01</songLength>
+        <songTempo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">131</songTempo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ภาวนา -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ภาวนา">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#SoulMusic"/>
+        <isMusicOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ThaiSong2020"/>
+        <hasReleaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2019</hasReleaseYear>
+        <songID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</songID>
+        <songLength>2:41</songLength>
+        <songTempo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">138</songTempo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ภูษณะ_ต. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ภูษณะ_ต.">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Freelance"/>
         <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ภูษณะ_ตรีบุรุษ"/>
-        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Pa_Wa_Na"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#พูดจริง"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ภาวนา"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#รู้ตัวอีกที"/>
     </owl:NamedIndividual>
     
 
@@ -2407,6 +2638,44 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ภูษณะ_ตรีบุรุษ">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Drummer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#รู้ตัวอีกที -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#รู้ตัวอีกที">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#SoulMusic"/>
+        <isMusicOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ThaiSong2020"/>
+        <hasReleaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2020</hasReleaseYear>
+        <songID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</songID>
+        <songLength>3:26</songLength>
+        <songTempo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">129</songTempo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#เค้าคนนั้น -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#เค้าคนนั้น">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#PopMusic"/>
+        <hasReleaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2020</hasReleaseYear>
+        <songID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</songID>
+        <songLength>4:02</songLength>
+        <songTempo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">134</songTempo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#เจ็บจนพอ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#เจ็บจนพอ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#PopMusic"/>
+        <isMusicOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ThaiSong2020"/>
+        <hasReleaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2019</hasReleaseYear>
+        <songID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</songID>
+        <songLength>4:38</songLength>
+        <songTempo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">173</songTempo>
     </owl:NamedIndividual>
     
 
@@ -2455,6 +2724,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#2020JOOXAwardArtistCatagory">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#2020JOOXThailandMusicAwards"/>
         <hasArtistOfTheYearAward rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#2020JOOXAristOfTheYearAward"/>
+        <hasNewAristOfTheYearAward rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#2020JOOXNewAristOfTheYearAward"/>
     </owl:NamedIndividual>
     
 
@@ -2464,6 +2734,17 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#2020JOOXAwardMusicCatagory">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#2020JOOXThailandMusicAwards"/>
         <hasPopSongOfTheYear rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#2020JOOXPopSongOfTheYearAward"/>
+        <hasSongOfTheYearAward rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#2020JOOXSongOfTheYearAward"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#2020JOOXNewAristOfTheYearAward -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#2020JOOXNewAristOfTheYearAward">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ArtistAward"/>
+        <hasArtistWhoGotAward rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Indigo"/>
+        <hasArtistWhoGotAward rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#MEYOU"/>
     </owl:NamedIndividual>
     
 
@@ -2472,9 +2753,31 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#2020JOOXPopSongOfTheYearAward">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#MusicAward"/>
-        <hasMusicThatGotAward rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Jep_Jon_Por_-_Enough"/>
-        <hasMusicThatGotAward rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Pa_Wa_Na"/>
-        <hasMusicThatGotAward rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Tah_Chun_Bpen_Kao"/>
+        <hasMusicThatGotAward rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ถ้าฉันเป็นเขา"/>
+        <hasMusicThatGotAward rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ภาวนา"/>
+        <hasMusicThatGotAward rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#เจ็บจนพอ"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#2020JOOXSongOfTheYearAward -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#2020JOOXSongOfTheYearAward">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#MusicAward"/>
+        <hasMusicThatGotAward rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ถ้าฉันเป็นเขา"/>
+        <hasMusicThatGotAward rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#เจ็บจนพอ"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#3_Legs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#3_Legs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#RockMusic"/>
+        <hasReleaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1971</hasReleaseYear>
+        <songID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</songID>
+        <songPeriod>2:48</songPeriod>
+        <songTempo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">117</songTempo>
     </owl:NamedIndividual>
     
 
@@ -2500,6 +2803,24 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#MEYOU_-_พูดจริง_[Official_MV] -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#MEYOU_-_พูดจริง_[Official_MV]">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#NarrativeMusicVideo"/>
+        <musicVideoLength>3:25</musicVideoLength>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#MEYOU_-_รู้ตัวอีกที_[Official_MV] -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#MEYOU_-_รู้ตัวอีกที_[Official_MV]">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#NarrativeMusicVideo"/>
+        <musicVideoLength>3:44</musicVideoLength>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Slow,_Slow_(Run_Run) -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Slow,_Slow_(Run_Run)">
@@ -2510,6 +2831,54 @@
         <songID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</songID>
         <songLength>3:29</songLength>
         <songTempo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">172</songTempo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Thanawut​_W. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Thanawut​_W.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Freelance"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Thanawut​_Wiboonkit"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#เค้าคนนั้น"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Thanawut​_Wiboonkit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Thanawut​_Wiboonkit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ElectronicGuitarist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Uncle_Albert/Admiral_Halsey -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Uncle_Albert/Admiral_Halsey">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#RockMusic"/>
+        <hasReleaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1971</hasReleaseYear>
+        <songID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</songID>
+        <songLength>4:49</songLength>
+        <songTempo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">91</songTempo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Wongsakorn​_R. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Wongsakorn​_R.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Freelance"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Wongsakorn​_Raksapol​"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#เค้าคนนั้น"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Wongsakorn​_Raksapol​ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Wongsakorn​_Raksapol​">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Keyboardist"/>
     </owl:NamedIndividual>
     
 
