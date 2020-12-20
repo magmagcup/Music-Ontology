@@ -101,7 +101,7 @@ Thananan Eim-on 6110545520</rdfs:comment>
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasArtistWhoGotAward">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasAwardReceiver"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#&apos;IsArtistWhoGotAward&apos;"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#&apos;isArtistWhoGotAward&apos;"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ArtistAward"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Artist"/>
     </owl:ObjectProperty>
@@ -247,7 +247,7 @@ Thananan Eim-on 6110545520</rdfs:comment>
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasMusicThatGotAward">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasAwardReceiver"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#&apos;IsMusicThatGotAward&apos;"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#&apos;isMusicThatGotAward&apos;"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#MusicAward"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Music"/>
     </owl:ObjectProperty>
@@ -591,15 +591,15 @@ Thananan Eim-on 6110545520</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#&apos;IsArtistWhoGotAward&apos; -->
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#&apos;isArtistWhoGotAward&apos; -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#&apos;IsArtistWhoGotAward&apos;"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#&apos;isArtistWhoGotAward&apos;"/>
     
 
 
-    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#&apos;IsMusicThatGotAward&apos; -->
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#&apos;isMusicThatGotAward&apos; -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#&apos;IsMusicThatGotAward&apos;"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#&apos;isMusicThatGotAward&apos;"/>
     
 
 
