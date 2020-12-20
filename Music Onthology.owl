@@ -1651,6 +1651,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ElectronicBass -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ElectronicBass">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ElectrophoneInstrument"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ElectronicGuitar -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ElectronicGuitar">
@@ -3336,6 +3344,112 @@
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Recommend song to people between age 11-20</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Age 11 - 20 HipHop</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Person"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasAge"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#x"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#y"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#y"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#HipHopMusic"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#z"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasRecommendedSong"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Keyboardist play keyboard</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
@@ -3525,6 +3639,39 @@
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#songPeriod"/>
                         <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#m"/>
                         <swrl:argument2>20th century</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AcousticGuitarist plays acoustic guitar</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#AcousticGuitarist"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#playChordophoneInstrument"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#AcousticGuitar"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -3727,39 +3874,6 @@
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasSimilarSong"/>
                         <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#x"/>
                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#x2"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AcousticGuitarist plays acoustic guitar</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#AcousticGuitarist"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#x"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#playChordophoneInstrument"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#x"/>
-                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#AcousticGuitar"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -5625,6 +5739,39 @@
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Drummer plays drum</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Drummer"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#playMembranophoneInstrument"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Drum"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Recommend song to people between age 11-20</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Age 11 - 20 Pop</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
@@ -5723,39 +5870,6 @@
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasRecommendedSong"/>
                         <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#x"/>
                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#z"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Drummer plays drum</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Drummer"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#x"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#playMembranophoneInstrument"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#x"/>
-                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Drum"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -6011,7 +6125,7 @@
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ElectronicGuitarist play ElectronicGuitar</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ElectronicBassist play ElectronicBass</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
             <rdf:Description>
@@ -6019,7 +6133,7 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ElectronicGuitarist"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ElectronicBassist"/>
                         <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#x"/>
                     </rdf:Description>
                 </rdf:first>
@@ -6034,7 +6148,7 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#playElectrophoneInstrument"/>
                         <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#x"/>
-                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ElectronicGuitar"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ElectronicBass"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -6313,8 +6427,263 @@
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ElectronicGuitarist play ElectronicGuitar</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ElectronicGuitarist"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#playElectrophoneInstrument"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ElectronicGuitar"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tempo 100 -150</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">recommended playlist for cloudy weather</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#songID"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#xid"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                <swrl:arguments>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#t2"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#songID"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#x2"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#xid2"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasMusic"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#p"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#x2"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Playlist"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#p"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasMusic"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#p"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#x"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                                        <swrl:arguments>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#t"/>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</rdf:first>
+                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </swrl:arguments>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#songTempo"/>
+                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#x"/>
+                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#t"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                <rdf:first>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#notEqual"/>
+                                                                                        <swrl:arguments rdf:parseType="Collection">
+                                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#xid"/>
+                                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#xid2"/>
+                                                                                        </swrl:arguments>
+                                                                                    </rdf:Description>
+                                                                                </rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                        <rdf:first>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                                                                <swrl:arguments>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                        <rdf:first rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#t2"/>
+                                                                                                        <rdf:rest>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</rdf:first>
+                                                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:rest>
+                                                                                                    </rdf:Description>
+                                                                                                </swrl:arguments>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:first>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                <rdf:first>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                                                                        <swrl:arguments>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                <rdf:first rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#t"/>
+                                                                                                                <rdf:rest>
+                                                                                                                    <rdf:Description>
+                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</rdf:first>
+                                                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                                                    </rdf:Description>
+                                                                                                                </rdf:rest>
+                                                                                                            </rdf:Description>
+                                                                                                        </swrl:arguments>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:first>
+                                                                                                <rdf:rest>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                                        <rdf:first>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#songTempo"/>
+                                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#x"/>
+                                                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#t2"/>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:first>
+                                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:rest>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasRecommendedPlaylist"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tempo 100 -150</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">recommended playlist for raining weather</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
             <rdf:Description>
@@ -6609,228 +6978,6 @@
                         <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasRecommendedSong"/>
                         <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#x"/>
                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#z"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tempo 100 -150</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">recommended playlist for raining weather</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#songID"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#x"/>
-                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#xid"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
-                                <swrl:arguments>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#t2"/>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</rdf:first>
-                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </swrl:arguments>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#songID"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#x2"/>
-                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#xid2"/>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                        <rdf:first>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasMusic"/>
-                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#p"/>
-                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#x2"/>
-                                            </rdf:Description>
-                                        </rdf:first>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                <rdf:first>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Playlist"/>
-                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#p"/>
-                                                    </rdf:Description>
-                                                </rdf:first>
-                                                <rdf:rest>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                        <rdf:first>
-                                                            <rdf:Description>
-                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasMusic"/>
-                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#p"/>
-                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#x"/>
-                                                            </rdf:Description>
-                                                        </rdf:first>
-                                                        <rdf:rest>
-                                                            <rdf:Description>
-                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                                <rdf:first>
-                                                                    <rdf:Description>
-                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
-                                                                        <swrl:arguments>
-                                                                            <rdf:Description>
-                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                                <rdf:first rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#t"/>
-                                                                                <rdf:rest>
-                                                                                    <rdf:Description>
-                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</rdf:first>
-                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                                                    </rdf:Description>
-                                                                                </rdf:rest>
-                                                                            </rdf:Description>
-                                                                        </swrl:arguments>
-                                                                    </rdf:Description>
-                                                                </rdf:first>
-                                                                <rdf:rest>
-                                                                    <rdf:Description>
-                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                                        <rdf:first>
-                                                                            <rdf:Description>
-                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#songTempo"/>
-                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#x"/>
-                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#t"/>
-                                                                            </rdf:Description>
-                                                                        </rdf:first>
-                                                                        <rdf:rest>
-                                                                            <rdf:Description>
-                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                                                <rdf:first>
-                                                                                    <rdf:Description>
-                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#notEqual"/>
-                                                                                        <swrl:arguments rdf:parseType="Collection">
-                                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#xid"/>
-                                                                                            <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#xid2"/>
-                                                                                        </swrl:arguments>
-                                                                                    </rdf:Description>
-                                                                                </rdf:first>
-                                                                                <rdf:rest>
-                                                                                    <rdf:Description>
-                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                                                        <rdf:first>
-                                                                                            <rdf:Description>
-                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
-                                                                                                <swrl:arguments>
-                                                                                                    <rdf:Description>
-                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                                                        <rdf:first rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#t2"/>
-                                                                                                        <rdf:rest>
-                                                                                                            <rdf:Description>
-                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</rdf:first>
-                                                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                                                                            </rdf:Description>
-                                                                                                        </rdf:rest>
-                                                                                                    </rdf:Description>
-                                                                                                </swrl:arguments>
-                                                                                            </rdf:Description>
-                                                                                        </rdf:first>
-                                                                                        <rdf:rest>
-                                                                                            <rdf:Description>
-                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                                                                <rdf:first>
-                                                                                                    <rdf:Description>
-                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                                                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
-                                                                                                        <swrl:arguments>
-                                                                                                            <rdf:Description>
-                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                                                                <rdf:first rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#t"/>
-                                                                                                                <rdf:rest>
-                                                                                                                    <rdf:Description>
-                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</rdf:first>
-                                                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                                                                                    </rdf:Description>
-                                                                                                                </rdf:rest>
-                                                                                                            </rdf:Description>
-                                                                                                        </swrl:arguments>
-                                                                                                    </rdf:Description>
-                                                                                                </rdf:first>
-                                                                                                <rdf:rest>
-                                                                                                    <rdf:Description>
-                                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                                                                        <rdf:first>
-                                                                                                            <rdf:Description>
-                                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#songTempo"/>
-                                                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#x"/>
-                                                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#t2"/>
-                                                                                                            </rdf:Description>
-                                                                                                        </rdf:first>
-                                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                                                                    </rdf:Description>
-                                                                                                </rdf:rest>
-                                                                                            </rdf:Description>
-                                                                                        </rdf:rest>
-                                                                                    </rdf:Description>
-                                                                                </rdf:rest>
-                                                                            </rdf:Description>
-                                                                        </rdf:rest>
-                                                                    </rdf:Description>
-                                                                </rdf:rest>
-                                                            </rdf:Description>
-                                                        </rdf:rest>
-                                                    </rdf:Description>
-                                                </rdf:rest>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </rdf:rest>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasRecommendedPlaylist"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#x"/>
-                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#p"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -7283,6 +7430,39 @@
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Violinish play violin</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Violinist"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#playChordophoneInstrument"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Violin"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Recommend song to people between age 11-20</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Age 11 - 20 Funk</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
@@ -7389,39 +7569,6 @@
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Violinish play violin</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Violinist"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#x"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#playChordophoneInstrument"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#x"/>
-                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Violin"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Recommend song to people who are older than 20</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Age 20+ HipHop</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
@@ -7479,112 +7626,6 @@
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                    </rdf:Description>
-                                </rdf:rest>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasRecommendedSong"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#x"/>
-                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#z"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Recommend song to people between age 11-20</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Age 11 - 20 HipHop</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Person"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#x"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasAge"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#x"/>
-                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#y"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
-                                        <swrl:arguments>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#y"/>
-                                                <rdf:rest>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</rdf:first>
-                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                    </rdf:Description>
-                                                </rdf:rest>
-                                            </rdf:Description>
-                                        </swrl:arguments>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                        <rdf:first>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
-                                                <swrl:arguments>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#y"/>
-                                                        <rdf:rest>
-                                                            <rdf:Description>
-                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</rdf:first>
-                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                            </rdf:Description>
-                                                        </rdf:rest>
-                                                    </rdf:Description>
-                                                </swrl:arguments>
-                                            </rdf:Description>
-                                        </rdf:first>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                <rdf:first>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#HipHopMusic"/>
-                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#z"/>
-                                                    </rdf:Description>
-                                                </rdf:first>
-                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                            </rdf:Description>
-                                        </rdf:rest>
                                     </rdf:Description>
                                 </rdf:rest>
                             </rdf:Description>
