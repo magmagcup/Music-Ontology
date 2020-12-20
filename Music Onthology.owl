@@ -1338,7 +1338,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Artiwara_Kongmalai">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Singer"/>
-        <bandAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">41</bandAge>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">41</hasAge>
         <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
@@ -1555,7 +1555,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Chanakan_Rattana-udom">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Singer"/>
-        <bandAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</bandAge>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</hasAge>
         <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
@@ -2012,7 +2012,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Joy_Olasunmibo_Ogunmakin">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Singer"/>
-        <bandAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</bandAge>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</hasAge>
         <hasGender>Female</hasGender>
     </owl:NamedIndividual>
     
@@ -2079,7 +2079,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Larry_Blackmon">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Singer"/>
-        <bandAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</bandAge>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</hasAge>
         <hasGender>Male</hasGender>
     </owl:NamedIndividual>
     
