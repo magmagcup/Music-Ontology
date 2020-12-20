@@ -921,6 +921,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ElectronicBassist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ElectronicBassist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Guitarist"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ElectronicGuitarist -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ElectronicGuitarist">
@@ -1199,6 +1207,18 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#AYO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#AYO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Solo"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Joy_Olasunmibo_Ogunmakin"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Down_on_My_Knees"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Help_Is_Coming"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Slow,_Slow_(Run_Run)"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Accidents_Will_Happen -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Accidents_Will_Happen">
@@ -1249,6 +1269,41 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Anthony_Lockett -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Anthony_Lockett">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#AcousticGuitarist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Arnett_Leftenant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Arnett_Leftenant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#OtherInstrumentalist"/>
+        <playAerophoneInstrument rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Saxophone"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Ayo_-_Down_On_My_Knees_Music_Video_OFFICIAL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Ayo_-_Down_On_My_Knees_Music_Video_OFFICIAL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#PerformanceMusicVideo"/>
+        <musicVideoLength>6:06</musicVideoLength>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Ayo_-_Help_Is_Coming_Official_Music_Video -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Ayo_-_Help_Is_Coming_Official_Music_Video">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#PerformanceMusicVideo"/>
+        <musicVideoLength>4:25</musicVideoLength>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Band_On_The_Run -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Band_On_The_Run">
@@ -1278,6 +1333,27 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Brian_M. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Brian_M.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Freelance"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Brian_Mitchell"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Down_on_My_Knees"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Help_Is_Coming"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Slow,_Slow_(Run_Run)"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Brian_Mitchell -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Brian_Mitchell">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#OtherInstrumentalist"/>
+        <playElectrophoneInstrument rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ElectronicOrgan"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Bright_Side -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Bright_Side">
@@ -1295,6 +1371,26 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Bruce_Thomas">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Bassist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Cameo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Cameo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Band"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Anthony_Lockett"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Arnett_Leftenant"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Eric_Durham"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Gary_Dow"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Gregory_Johnson"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Larry_Blackmon"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Nathan_Leftenant"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Tomi_Jenkins"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Wayne_Cooper"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#I_Want_You"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Insane"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#I&apos;ll_Be_With_You"/>
     </owl:NamedIndividual>
     
 
@@ -1389,6 +1485,20 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Down_on_My_Knees -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Down_on_My_Knees">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ReggaeMusic"/>
+        <hasMusicVideo rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Ayo_-_Down_On_My_Knees_Music_Video_OFFICIAL"/>
+        <isMusicOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Reggae"/>
+        <hasReleaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1992</hasReleaseYear>
+        <songID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</songID>
+        <songLength>4:00</songLength>
+        <songTempo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">124</songTempo>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Drum -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Drum">
@@ -1400,6 +1510,14 @@
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ElectronicGuitar -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ElectronicGuitar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ElectrophoneInstrument"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ElectronicOrgan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ElectronicOrgan">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ElectrophoneInstrument"/>
     </owl:NamedIndividual>
     
@@ -1422,6 +1540,14 @@
         <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Alison"/>
         <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#(The_Angels_Wanna_Wear_My)_Red_Shoes"/>
         <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#(What&apos;s_So_Funny_&apos;Bout)_Peace,_Love_And_Understanding"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Eric_Durham -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Eric_Durham">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#AcousticGuitarist"/>
     </owl:NamedIndividual>
     
 
@@ -1451,9 +1577,61 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Fu-Gee-La -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Fu-Gee-La">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#HipHopMusic"/>
+        <isMusicOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#HIPHOPUDONTSTOP"/>
+        <hasReleaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1996</hasReleaseYear>
+        <songID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</songID>
+        <songLength>4:20</songLength>
+        <songTempo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</songTempo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Fugees -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Fugees">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Band"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Lauryn_Noelle_Hill"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Nel_Ust_Wyclef_Jean"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Pras_Michel"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Fu-Gee-La"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Nappy_Heads"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Nappy_Heads_-_Remix"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Ready_or_Not"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Gary_Dow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Gary_Dow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Bassist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Gregory_Johnson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Gregory_Johnson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Keyboardist"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#HARD_ROCK_2010 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#HARD_ROCK_2010">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Playlist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#HIPHOPUDONTSTOP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#HIPHOPUDONTSTOP">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Playlist"/>
     </owl:NamedIndividual>
     
@@ -1475,6 +1653,20 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Help_Is_Coming -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Help_Is_Coming">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ReggaeMusic"/>
+        <hasMusicVideo rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Ayo_-_Help_Is_Coming_Official_Music_Video"/>
+        <isMusicOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Reggae"/>
+        <hasReleaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2006</hasReleaseYear>
+        <songID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</songID>
+        <songLength>3:58</songLength>
+        <songTempo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">130</songTempo>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Horn -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Horn">
@@ -1491,6 +1683,18 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#I_Want_You -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#I_Want_You">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#FunkMusic"/>
+        <hasReleaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1978</hasReleaseYear>
+        <songID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</songID>
+        <songLength>4:10</songLength>
+        <songTempo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">84</songTempo>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Indigo -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Indigo">
@@ -1503,10 +1707,42 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Insane -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Insane">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#FunkMusic"/>
+        <hasReleaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1978</hasReleaseYear>
+        <songID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</songID>
+        <songLength>5:03</songLength>
+        <songTempo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">105</songTempo>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#James_Paul_McCartney -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#James_Paul_McCartney">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Singer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#James_W. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#James_W.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Freelance"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#James_Wormworth"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Down_on_My_Knees"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Help_Is_Coming"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Slow,_Slow_(Run_Run)"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#James_Wormworth -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#James_Wormworth">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Drummer"/>
     </owl:NamedIndividual>
     
 
@@ -1548,6 +1784,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Joy_Olasunmibo_Ogunmakin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Joy_Olasunmibo_Ogunmakin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Singer"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Kazoo -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Kazoo">
@@ -1556,10 +1800,66 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Keith_C. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Keith_C.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Freelance"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Keith_Christopher"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Down_on_My_Knees"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Help_Is_Coming"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Slow,_Slow_(Run_Run)"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Keith_Christopher -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Keith_Christopher">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ElectronicBassist"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Keyboard -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Keyboard">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ElectrophoneInstrument"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Larry_Blackmon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Larry_Blackmon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Singer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Larry_C. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Larry_C.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Freelance"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Larry_Campbell"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Down_on_My_Knees"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Help_Is_Coming"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Slow,_Slow_(Run_Run)"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Larry_Campbell -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Larry_Campbell">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ElectronicGuitarist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Lauryn_Noelle_Hill -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Lauryn_Noelle_Hill">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Singer"/>
     </owl:NamedIndividual>
     
 
@@ -1610,10 +1910,53 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Nappy_Heads -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Nappy_Heads">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#HipHopMusic"/>
+        <isMusicOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#HIPHOPUDONTSTOP"/>
+        <hasReleaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1994</hasReleaseYear>
+        <songID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</songID>
+        <songLength>4:29</songLength>
+        <songTempo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">102</songTempo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Nappy_Heads_-_Remix -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Nappy_Heads_-_Remix">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#HipHopMusic"/>
+        <isMusicOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#HIPHOPUDONTSTOP"/>
+        <hasReleaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1994</hasReleaseYear>
+        <songID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</songID>
+        <songLength>5:22</songLength>
+        <songTempo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">97</songTempo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Nathan_Leftenant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Nathan_Leftenant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#OtherInstrumentalist"/>
+        <playAerophoneInstrument rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Trumpet"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Nattawut_Srimhok -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Nattawut_Srimhok">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Singer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Nel_Ust_Wyclef_Jean -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Nel_Ust_Wyclef_Jean">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Keyboardist"/>
     </owl:NamedIndividual>
     
 
@@ -1702,6 +2045,26 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Polydor_Records -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Polydor_Records">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Company"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Down_on_My_Knees"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Help_Is_Coming"/>
+        <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Slow,_Slow_(Run_Run)"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Pras_Michel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Pras_Michel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#OtherInstrumentalist"/>
+        <playElectrophoneInstrument rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Sampler"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Raining -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Raining">
@@ -1718,6 +2081,19 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Ready_or_Not -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Ready_or_Not">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#HipHopMusic"/>
+        <isMusicOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#HIPHOPUDONTSTOP"/>
+        <hasReleaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1996</hasReleaseYear>
+        <songID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</songID>
+        <songLength>1:32</songLength>
+        <songLength>3:47</songLength>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Recorder -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Recorder">
@@ -1726,10 +2102,26 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Reggae -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Reggae">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Playlist"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Sad -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Sad">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Mood"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Sampler -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Sampler">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ElectrophoneInstrument"/>
     </owl:NamedIndividual>
     
 
@@ -1838,6 +2230,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Tomi_Jenkins -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Tomi_Jenkins">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Singer"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Trombone -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Trombone">
@@ -1874,8 +2274,17 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Wanyai">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Solo"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Olarn_Chujai"/>
         <isOwnerOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Jep_Jon_Por_-_Enough"/>
         <playElectrophoneInstrument rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ElectronicGuitar"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Wayne_Cooper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Wayne_Cooper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Singer"/>
     </owl:NamedIndividual>
     
 
@@ -2070,6 +2479,41 @@
     
 
 
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Ayo_-_Slow,_Slow_(Run_Run) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Ayo_-_Slow,_Slow_(Run_Run)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#PerformanceMusicVideo"/>
+        <musicVideoLength>3:39</musicVideoLength>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#I&apos;ll_Be_With_You -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#I&apos;ll_Be_With_You">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#FunkMusic"/>
+        <hasReleaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1978</hasReleaseYear>
+        <songID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</songID>
+        <songLength>4:24</songLength>
+        <songTempo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">93</songTempo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Slow,_Slow_(Run_Run) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Slow,_Slow_(Run_Run)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ReggaeMusic"/>
+        <hasMusicVideo rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Ayo_-_Slow,_Slow_(Run_Run)"/>
+        <isMusicOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Reggae"/>
+        <hasReleaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2008</hasReleaseYear>
+        <songID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</songID>
+        <songLength>3:29</songLength>
+        <songTempo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">172</songTempo>
+    </owl:NamedIndividual>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -2122,10 +2566,13 @@
     <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#r">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#x2">
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#r1">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#t">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#r2">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#t2">
@@ -2134,13 +2581,10 @@
     <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#xid">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#x2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#xid2">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#r1">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#r2">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#a">
