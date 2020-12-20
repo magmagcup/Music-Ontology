@@ -262,9 +262,9 @@ Thananan Eim-on 6110545520</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasNewAristOfTheYearAward -->
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasNewArtistOfTheYearAward -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasNewAristOfTheYearAward">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasNewArtistOfTheYearAward">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasArtistAward"/>
     </owl:ObjectProperty>
     
@@ -287,9 +287,9 @@ Thananan Eim-on 6110545520</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasPopSongOfTheYear -->
+    <!-- http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasPopSongOfTheYearAward -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasPopSongOfTheYear">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasPopSongOfTheYearAward">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#hasMusicAward"/>
     </owl:ObjectProperty>
     
@@ -3166,7 +3166,7 @@ Thananan Eim-on 6110545520</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#2019JOOXAwardArtistCatagory">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#2019JOOXThailandMusicAwards"/>
         <hasArtistOfTheYearAward rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#2019JOOXAristOfTheYearAward"/>
-        <hasNewAristOfTheYearAward rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#2019JOOXNewFaceAristOfTheYearAward"/>
+        <hasNewArtistOfTheYearAward rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#2019JOOXNewFaceAristOfTheYearAward"/>
         <awardCountry>Thailand</awardCountry>
         <awardYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2019</awardYear>
     </owl:NamedIndividual>
@@ -3188,10 +3188,10 @@ Thananan Eim-on 6110545520</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#2019JOOXNewFaceAristOfTheYearAward">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#ArtistAward"/>
-        <hasNewAristOfTheYearAward rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#D_Gerrard"/>
-        <hasNewAristOfTheYearAward rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#OG-ANIC"/>
-        <hasNewAristOfTheYearAward rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Phum_Viphurit"/>
-        <hasNewAristOfTheYearAward rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#WONDERFRAME"/>
+        <hasNewArtistOfTheYearAward rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#D_Gerrard"/>
+        <hasNewArtistOfTheYearAward rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#OG-ANIC"/>
+        <hasNewArtistOfTheYearAward rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#Phum_Viphurit"/>
+        <hasNewArtistOfTheYearAward rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#WONDERFRAME"/>
     </owl:NamedIndividual>
     
 
@@ -3223,7 +3223,7 @@ Thananan Eim-on 6110545520</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#2020JOOXAwardArtistCatagory">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#2020JOOXThailandMusicAwards"/>
         <hasArtistOfTheYearAward rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#2020JOOXAristOfTheYearAward"/>
-        <hasNewAristOfTheYearAward rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#2020JOOXNewAristOfTheYearAward"/>
+        <hasNewArtistOfTheYearAward rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#2020JOOXNewAristOfTheYearAward"/>
         <awardCountry>Thailand</awardCountry>
         <awardYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2020</awardYear>
     </owl:NamedIndividual>
@@ -3234,7 +3234,7 @@ Thananan Eim-on 6110545520</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#2020JOOXAwardMusicCatagory">
         <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#2020JOOXThailandMusicAwards"/>
-        <hasPopSongOfTheYear rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#2020JOOXPopSongOfTheYearAward"/>
+        <hasPopSongOfTheYearAward rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#2020JOOXPopSongOfTheYearAward"/>
         <hasSongOfTheYearAward rdf:resource="http://www.semanticweb.org/user/ontologies/2563/9/Music_Onthology#2020JOOXSongOfTheYearAward"/>
         <awardCountry>Thailand</awardCountry>
         <awardYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2020</awardYear>
